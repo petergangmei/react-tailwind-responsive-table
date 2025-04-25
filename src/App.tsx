@@ -6,15 +6,15 @@ import { customers } from './data/customers';
 function App() {
   return (
     <div className="App">
-      <header className="bg-white shadow">
+      <header className="bg-gray-800 shadow">
         <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl font-bold text-gray-900">Customer Information</h1>
-          <p className="mt-2 text-sm text-gray-500">A responsive table that adapts to different screen sizes</p>
+          <h1 className="text-3xl font-bold text-white">Customer Information</h1>
+          <p className="mt-2 text-sm text-gray-300">Customer data table with consistent appearance across all devices</p>
         </div>
       </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <div className="px-4 py-2 sm:px-0">
+      <main className="w-full">
+        <div className="max-w-7xl mx-auto py-6 px-2 sm:px-6 lg:px-8">
+          <div className="overflow-x-auto w-full">
             <ResponsiveTable customers={customers} />
           </div>
         </div>
