@@ -1,5 +1,8 @@
+/* Custom styles can be added here */
+
 .App {
-  text-align: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
 }
 
 .App-logo {
